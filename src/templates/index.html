@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free resto catalogue for you" />
+    <meta name="theme-color" content="#f1b4bb" />
+
+    <link rel="icon" href="./logo.png" alt="logo" />
+
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <link rel="manifest" href="./app.webmanifest" />
+    <title>Carat Cuisine</title>
+  </head>
+
+  <body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <header class="app-bar">
+      <div class="app-bar__menu">
+        <button id="hamburgerButton">☰</button>
+      </div>
+      <div class="app-bar__brand">
+        <a href="#/resto-list"
+          ><img src="./logo.png" alt="Carat Cuisine Logo"
+        /></a>
+        <h1>Carat Cuisine</h1>
+      </div>
+      <nav id="navigationDrawer" class="app-bar__navigation">
+        <ul>
+          <li><a href="#/resto-list">Home</a></li>
+          <li><a href="#/like">Favourite</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/lussyanast/">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- <div class="hero" id="favorite">
+    <div class="hero_inner">
+      <h1 class="hero_title">Welcome to Carat Cuisine</h1>
+      <p class="hero_tagline">Find your favorite restaurant in one click</p>
+      <button class="button" onclick="window.location.href='#mainContent'">
+        See Restaurants
+      </button>
+    </div>
+  </div> -->
+    <div class="hero" id="favorite">
+      <picture>
+        <!-- Version for mobile screens -->
+        <source
+          media="(max-width: 768px)"
+          srcset="./images/heros/hero-image_2_mobile.jpg"
+        />
+        <!-- Version for desktop screens -->
+        <source
+          media="(min-width: 769px)"
+          srcset="./images/heros/hero-image_2_desktop.jpg"
+        />
+        <!-- Default (fallback) image -->
+        <img
+          loading="lazy"
+          src="./images/heros/hero-image_2.jpg"
+          alt="Hero Image"
+          class="bg-image"
+        />
+      </picture>
+      <div class="hero_inner">
+        <h1 class="hero_title">Welcome to Carat Cuisine</h1>
+        <p class="hero_tagline">Find your favorite restaurant in one click</p>
+        <button class="button" onclick="window.location.href='#mainContent'">
+          See Restaurants
+        </button>
+      </div>
+    </div>
+
+    <main id="mainContent" tabindex="0"></main>
+
+    <footer>
+      <div id="footerTools">
+        <button id="subscribePushNotification" class="btn">
+          Subscribe Push Notification
+        </button>
+        <button id="unsubscribePushNotification" class="btn">
+          Unsubscribe Push Notification
+        </button>
+      </div>
+      <p>
+        Copyright &copy;
+        <a
+          href="https://restaurant-api.dicoding.dev/"
+          target="_blank"
+          rel="noreferrer"
+          >2024 - Restaurant Apps</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

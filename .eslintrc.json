@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": 0,
+    "no-console": 0,
+    "no-underscore-dangle": 0,
+    "no-restricted-globals": 0,
+    "linebreak-style": 0,
+    "no-shadow": 0,
+    "default-case": 0,
+    "no-return-assign": 0,
+    "no-sequences": 0,
+    "func-names": 0,
+    "prefer-rest-params": 0,
+    "no-use-before-define": 0,
+    "no-void": 0,
+    "consistent-return": 0,
+    "block-scoped-var": 0,
+    "no-plusplus": 0,
+    "vars-on-top": 0,
+    "no-var": 0,
+    "no-unused-expressions": 0,
+    "no-nested-ternary": 0,
+    "no-multi-assign": 0,
+    "new-cap": 0,
+    "max-len": ["error", { "code": 120 }],
+    "no-restricted-syntax": 0,
+    "no-mixed-operators": 0,
+    "class-methods-use-this": 0,
+    "no-func-assign": 0,
+    "eqeqeq": 0,
+    "no-param-reassign": 0,
+    "no-continue": 0,
+    "no-cond-assign": 0,
+    "prefer-destructuring": 0,
+    "no-proto": 0,
+    "guard-for-in": 0,
+    "no-undef": 0, // Allow references to undeclared variables
+    "no-new-func": 0, // Allow the use of Function constructor
+    "no-unused-vars": 0, // Allow unused variables
+    "no-unreachable": 0, // Allow unreachable code
+    "no-empty": 0, // Allow empty block statements
+    "no-fallthrough": 0, // Allow fallthrough in switch statements
+    "no-loop-func": 0, // Allow function declarations in loops
+    "no-await-in-loop": 0, // Allow await inside loops
+    "no-return-await": 0, // Allow redundant use of await in return statement
+    "no-promise-executor-return": 0, // Allow returning values from promise executor functions
+    "max-classes-per-file": 0, // Allow multiple classes per file
+    "no-useless-escape": "error"
+  }
+}
